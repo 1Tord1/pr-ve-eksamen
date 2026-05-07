@@ -41,6 +41,10 @@ Host key verification failed.)
 så brukte jeg google AI oversikt og den ga meg denne scripten som fikset det: (ssh-keygen -R tordpi)
 Og jeg forsto det sånn at når jeg reinstallerte oss, så ble SSH-nøkkelen forandret, og skriptet resatte nøkkelen.
 
+etter dette så brukte jeg url fra git hub på browser og copierte det på search baren i vs code og lagde en mappe som het prøve eksamen å valgte den for å putte in repo fra github, grunnen til at jeg har det på puttet det in i vs code er sån at jeg kan ha koden min og dokumentasjon i samme plass.
+
+så gjorde jeg klar py, js, html og css i mappa.
+
 
 
 
