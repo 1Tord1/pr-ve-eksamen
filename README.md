@@ -43,7 +43,21 @@ Og jeg forsto det sånn at når jeg reinstallerte oss, så ble SSH-nøkkelen for
 
 etter dette så brukte jeg url fra git hub på browser og copierte det på search baren i vs code og lagde en mappe som het prøve eksamen å valgte den for å putte in repo fra github, grunnen til at jeg har det på puttet det in i vs code er sån at jeg kan ha koden min og dokumentasjon i samme plass.
 
+men jeg viste ikke hvordan man gjorde push og pull fra git hub til vs code så jeg søkte opp: 
+(how to push git hub repo to vs code) og brukte denne netsiden for å finne ut av det:
+https://code.visualstudio.com/docs/sourcecontrol/quickstart
+
 så gjorde jeg klar py, js, html og css i mappa.
+
+jeg har satt opp flask på python og jeg gjorde dette med et screen shoot som jeg hadd lagret
+![alt text](<Screenshot 2026-03-17 090732.png>)
+
+men jeg justerte lit på den så at jeg har en annen port jeg kan kjøre nettsiden på
+dette er det jeg justerte: app.run(host="0.0.0.0", debug=True, port=6868) istedet for app.run(debug=true)
+
+så satt jeg opp html in i templates mappe så at python kunne rendere template.
+jeg testet nettsiden og den funket.
+
 
 
 
