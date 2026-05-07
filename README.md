@@ -57,7 +57,7 @@ dette er det jeg justerte: app.run(host="0.0.0.0", debug=True, port=6868) istede
 
 så satt jeg opp html in i templates mappe så at python kunne rendere template.
 jeg testet nettsiden og den funket.
-
+så pushet og pullet jeg fra vs code til github
 
 
 
