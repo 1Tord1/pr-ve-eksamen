@@ -71,3 +71,5 @@ så pushet og pullet jeg fra vs code til github
 
 
 
+
+

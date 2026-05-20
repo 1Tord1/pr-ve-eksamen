@@ -1,12 +1,30 @@
 from flask import Flask, render_template
+import pymysql
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 app = Flask(__name__)
 
-@app.route('/html')
+# Test DB connection on startup
+def test_db():
+    try:
+        conn = pymysql.connect(
+            host="10.2.1.79",
+            user="tord",
+            password="tord123",
+            database="testE"
+        )
+        print("✅ MariaDB Connected!")
+        conn.close()
+    except pymysql.Error as e:
+        print(f"❌ DB Failed: {e}")
+
+@app.route('/')
 def html():
     return render_template('text.html')
 
 if __name__ == "__main__":
+    test_db()  
     app.run(host="0.0.0.0", debug=True, port=6868)
-
-
