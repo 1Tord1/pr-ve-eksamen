@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+     <div class="live-klokke" id="klokke"></div>
+
+    <h1>dashboard</h1>
+
+
+
+    <button class="menu-button" id="menuButton" aria-expanded="false" aria-label="Open menu">
+        <img src="{{ url_for('static', filename='image.png') }}" alt="Menu icon">
+    </button>
+
+    <nav class="menu-panel" id="menuPanel" aria-hidden="true">
+        <ul>
+            <li><button type="button" class="menu-item" data-action="Home">Home</button></li>
+            <li><button type="button" class="menu-item" data-action="dashboard">dashboard</button></li>
+            <li><button type="button" class="menu-item" data-action="log">log</button></li>
+            <li><button type="button" class="menu-item" data-action="info">info</button></li>
+        </ul>
+    </nav>
+
+
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

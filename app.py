@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+﻿from flask import Flask, render_template
 import pymysql
 from dotenv import load_dotenv
 import os
@@ -22,8 +22,21 @@ def test_db():
         print(f"❌ DB Failed: {e}")
 
 @app.route('/')
-def html():
-    return render_template('text.html')
+@app.route('/Home')
+def home():
+    return render_template('Home.html')
+
+@app.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html')
+
+@app.route('/log')
+def log():
+    return render_template('log.html')
+
+@app.route('/info')
+def info():
+    return render_template('info.html')
 
 if __name__ == "__main__":
     test_db()  
